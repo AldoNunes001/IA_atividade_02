@@ -23,7 +23,7 @@ dt_classifier.fit(X_train, y_train)
 knn_classifier = KNeighborsClassifier()
 knn_classifier.fit(X_train, y_train)
 
-# Test accuracy of models
+# Verificando a Acurácia dos Modelos
 nb_accuracy = gaussian_nb.score(X_test, y_test)
 dt_accuracy = dt_classifier.score(X_test, y_test)
 knn_accuracy = knn_classifier.score(X_test, y_test)
@@ -32,7 +32,7 @@ print("Naive Bayes Accuracy:", nb_accuracy)
 print("Decision Tree Accuracy:", dt_accuracy)
 print("KNN Accuracy:", knn_accuracy)
 
-# Save models
+# Salvando os modelos
 joblib.dump(gaussian_nb, './gaussian_nb_model.pkl')
 joblib.dump(dt_classifier, './dt_classifier_model.pkl')
 joblib.dump(knn_classifier, './knn_classifier_model.pkl')
