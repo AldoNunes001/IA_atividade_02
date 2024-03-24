@@ -1,0 +1,4 @@
+Naive Bayes Accuracy: 0.8833333333333333
+Decision Tree Accuracy: 0.95
+KNN Accuracy: 0.9
+Models saved successfully.
